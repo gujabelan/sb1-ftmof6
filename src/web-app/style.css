@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#join, #chat {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#qrcode {
+    margin-top: 20px;
+    align-self: center;
+}
+
+#roomHeader {
+    text-align: center;
+}

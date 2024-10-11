@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC Text Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div id="join">
+            <h2>Join a Room</h2>
+            <input type="text" id="roomId" placeholder="Enter Room ID">
+            <button id="joinBtn">Join</button>
+            <button id="createBtn">Create Room</button>
+            <div id="qrcode"></div>
+        </div>
+        <div id="chat" style="display: none;">
+            <h2 id="roomHeader"></h2>
+            <div id="messages"></div>
+            <input type="text" id="messageInput" placeholder="Type a message...">
+            <button id="sendBtn">Send</button>
+            <button id="leaveBtn">Leave Room</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
